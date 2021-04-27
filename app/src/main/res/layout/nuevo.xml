@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/datos"
+    android:padding="10dp"
+    android:background="#eeeeee">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ed554a"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="General"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:id="@+id/Nombre"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Raza"
+        android:id="@+id/Tipo"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_below="@+id/Nombre"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ed554a"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Nombre"
+        android:text="Genero"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Tipo"
+        android:layout_toRightOf="@+id/genero"
+        android:layout_marginLeft="75dp"/>
+
+    <TextView
+        android:id="@+id/contitucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ed554a"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/genero"
+        android:layout_marginTop="40dp"
+        android:text="Constitucion"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:id="@+id/Constitucion"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#cfd0d2"
+        android:layout_below="@+id/spinner1"
+        android:layout_toRightOf="@+id/Constitucion"
+        android:layout_marginTop="30dp"
+        android:text="kg"/>
+    <Button
+        android:id="@+id/crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kg"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:text="Crear"></Button>
+
+
+
+</RelativeLayout>
